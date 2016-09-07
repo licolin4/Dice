@@ -16,32 +16,32 @@ void mousePressed()
 class Die //models one single dice cube
 {
 	//variable declarations here
-	boolean num
+	boolean num;
 	int myX, myY;
 	Die(int x, int y) //constructor
 	{
-		//variable initializations here
-		roll();
 		myX = x;
 		myY = y;
+ 		//variable initializations here
+		roll();
 	}
 	void roll()
 	{
 		//your code here
-		if (int)(Math.random() < 6 + 1) < 2
+		if (Math.random() < .16)
 		{
-			num = 1
+			num = true;
 		}
-
+		else
+		{
+			num = false;
+		}
 	}
 	void show()
 	{
 		//your code here
 		fill(255);
 		rect(myX,myY,60,60);
-		if(num == 1)
-		{
-
-		}
+		fill(0);
 	}
 }
