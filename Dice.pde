@@ -62,7 +62,45 @@ class Die //models one single dice cube
 		fill(255);
 		rect(myX,myY,100,100);
 		fill(0);
-		ellipse(myX+50,myY+50,20,20);
+		if (numDots == 1)
+		{
+			ellipse(myX+50,myY+50,20,20);
+		}
+		if (numDots == 2)
+		{
+			ellipse(myX+25,myY+25,20,20);
+			ellipse(myX+75,myY+75,20,20);
+		}
+		if (numDots == 3)
+		{
+			ellipse(myX+50,myY+50,20,20);
+			ellipse(myX+75,myY+75,20,20);
+			ellipse(myX+25,myY+25,20,20);
+		}
+		if (numDots == 4)
+		{
+			ellipse(myX+25,myY+25,20,20);
+			ellipse(myX+75,myY+75,20,20);
+			ellipse(myX+75,myY+25,20,20);
+			ellipse(myX+25,myY+75,20,20);
+		}
+		if (numDots == 5)
+		{
+			ellipse(myX+25,myY+25,20,20);
+			ellipse(myX+75,myY+75,20,20);
+			ellipse(myX+75,myY+25,20,20);
+			ellipse(myX+25,myY+75,20,20);
+			ellipse(myX+50,myY+50,20,20);
+		}
+		if (numDots == 6)
+		{
+			ellipse(myX+25,myY+25,20,20);
+			ellipse(myX+75,myY+75,20,20);
+			ellipse(myX+75,myY+25,20,20);
+			ellipse(myX+25,myY+75,20,20);
+			ellipse(myX+25,myY+50,20,20);
+			ellipse(myX+75,myY+50,20,20);
+		}
 	}
 }
 //Target one;
