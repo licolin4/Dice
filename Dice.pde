@@ -15,7 +15,7 @@ void setup()
 void draw()
 {
 	//your code here
-	background(192);
+	background(0,100,255);
 	int sum = 0;
 	one = new Die(50,50); 
 	two = new Die(200,50);
@@ -35,6 +35,9 @@ void draw()
 	seven.show();
 	eight.show();
 	nine.show();
+	textSize(25);
+	text(one.numDots+two.numDots+three.numDots+four.numDots+five.numDots+six.numDots+seven.numDots+eight.numDots+eight.numDots+nine.numDots,280,30);
+	text("Sum =",190,30);
 }
 void mousePressed()
 {
