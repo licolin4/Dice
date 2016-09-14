@@ -15,7 +15,7 @@ void setup()
 void draw()
 {
 	//your code here
-	background(0,100,255);
+	background(153,255,255);
 	int sum = 0;
 	one = new Die(50,50); 
 	two = new Die(200,50);
